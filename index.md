@@ -3,7 +3,7 @@ title: Tiago Tresoldi's Home Page
 subtitle: Language & Literature. Evolution. Programming. Etc.
 ---
 
-![](https://tresoldi.github.io/assets/img/prof_pic.jpg){ style=float:right;width:40%; }
+![](https://tresoldi.github.io/tiago.jpg){ style=float:right;width:40%; }
 
 I am a researcher at the Department of Linguistics and Philology of the Uppsala University,
 developing methods for analyzing the evolution of languages and of text traditions.
