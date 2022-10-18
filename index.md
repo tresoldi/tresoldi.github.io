@@ -80,6 +80,6 @@ URL: [http://www\.periodicos\.letras\.ufmg\.br/index\.php/nuntius\\\_antiquus/ar
 
 ## Contact
 
-I can be reached at <i class="fa-regular fa-envelope"></i> &lt;tiago.tresoldi at lingfil dot uu dot se&gt;.
-My GitHub account is <i class="fa-brands fa-github"></i> [tresoldi](https://github.com/tresoldi/)
-and I can be found on Twitter as <i class="fa-brands fa-twitter"></i> [\@tresoldi](https://twitter.com/tresoldi/).
+I can be reached at ![](mail.svg) &lt;tiago.tresoldi at lingfil dot uu dot se&gt;.
+My GitHub account is ![](github.svg) [tresoldi](https://github.com/tresoldi/)
+and I can be found on Twitter as ![](twitter.svg) [\@tresoldi](https://twitter.com/tresoldi/).
