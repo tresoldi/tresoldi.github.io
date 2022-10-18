@@ -116,8 +116,6 @@ def main():
     # Obtain the various bibliographic information
     biblio = build_biblio()
 
-    print(biblio.keys())
-
     # Build list of replacements and generate the Markdown files for pandoc
     replaces = {
         "bib_highlights": biblio["highlights"],
