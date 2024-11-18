@@ -1,0 +1,13 @@
+Manuscript,Text,Region,Century,Scribe
+A,"A mighty river cuts through stone by persistence, not power.",North,12th,"Careful, formal style"
+B,"A great river carves through stone by persistence, not power.",North,12th,Known for poetic language
+C,A mighty river cuts through stone by power and persistence.,North,13th,Known for rephrasing word order
+D,"A strong river wears down rocks with persistence, not strength.",South,13th,Simplifies text for readability
+E,"A strong river wears rocks by persistence, not strength.",South,13th,Same school as Manuscript D
+F,"A strong river erodes rocks through patience, not strength.",West,14th,Unusual metaphor choices
+G,"A strong river erodes stones with patience, not strength.",West,14th,Uses creative metaphors
+H,"A mighty stream cuts rocks with power, not patience.",East,13th,Tends to simplify text
+I,"A clever stream wears stones by persistence, not strength.",North,12th,Faithful but verbose
+J,"A great river carves through stone with persistence, not patience.",North,12th,Prefers poetic language
+K,"A wise river flows through stones by persistence, not power.",South,13th,Reinterprets proverbs
+L,A strong river wears rocks with patience and persistence.,West,14th,Known for combining sources
