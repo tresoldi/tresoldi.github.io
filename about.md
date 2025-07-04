@@ -54,8 +54,8 @@ My research focuses on computational historical linguistics, particularly:
 
 ## Contact
 
-<img src="mail.svg" style="width:16px;vertical-align:middle;" /> **Email:** tiago@tresoldi.org  
-<img src="github.svg" style="width:16px;vertical-align:middle;" /> **GitHub:** [tresoldi](https://github.com/tresoldi)  
-<img src="twitter.svg" style="width:16px;vertical-align:middle;" /> **Twitter:** [@tresoldi](https://twitter.com/tresoldi)
+<img src="mail.svg" class="contact-icon" /> **Email:** tiago@tresoldi.org  
+<img src="github.svg" class="contact-icon" /> **GitHub:** [tresoldi](https://github.com/tresoldi)  
+<img src="twitter.svg" class="contact-icon" /> **Twitter:** [@tresoldi](https://twitter.com/tresoldi)
 
 [Download CV (PDF)](/assets/cv.pdf)
