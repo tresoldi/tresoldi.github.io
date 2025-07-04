@@ -1,25 +1,20 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to my new website"
 date:   2025-04-26 13:17:45 +0200
-categories: jekyll update
+tags: [website, announcement]
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Welcome to my new academic website! This site will serve as a hub for my research in computational historical linguistics, software projects, and occasional thoughts on data science and academic life.
 
-Jekyll also offers powerful support for code snippets:
+## What you'll find here
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+- **Research**: My work on phylogenetic methods, South American languages, and computational linguistics
+- **Software**: Open-source tools I develop for linguistic analysis and data science
+- **Blog**: Thoughts on research methods, programming, and academic life
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+## Current focus
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+I'm particularly excited about my ongoing work with native South American languages and the development of new computational methods for historical linguistics. The intersection of traditional linguistic methods with modern data science approaches offers fascinating opportunities for discovery.
+
+Stay tuned for more posts about specific projects, methodological insights, and the occasional technical deep-dive!
