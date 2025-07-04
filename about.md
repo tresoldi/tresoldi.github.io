@@ -28,23 +28,34 @@ I am Tiago Tresoldi, currently working as an **Insight Analyst** at Etraveli in 
 
 ## Education
 
-**Ph.D. in History of Literature** | UFRGS, Brazil | 2018  
-*Thesis: The classical as a means of relationship with otherness, as showcased by the literary development of Odysseus*
+**Ph.D. in Language / History of Literature** | UFRGS, Brazil | 2018  
+*Thesis: O Ulisses dos muitos retornos: uma história do "clássico" (The Ulysses of many returns: a history of the "classical")*
+
+**Master in Language / History of Literature** | UFRGS, Brazil | 2010  
+*Thesis: A teorização e a prática do romance histórico em "Os noivos", de Alessandro Manzoni (Theory and fiction of the historical novel in "The Betrothed" of Alessandro Manzoni)*
+
+**Bachelor in Italian Language and Culture** | ICoN / Università di Pisa, Italy | 2008  
+*Thesis: Utilizzazione di "Hidden Markov Models" ed altri modelli per il tagging dell'italiano (Usage of Hidden Markov Models and other models for the tagging of Italian)*
+
+**Bachelor in Portuguese & English** | UFRGS, Brazil | 2007
 
 ## Research Interests
 
 My research focuses on computational historical linguistics, particularly:
 
-- Phylogenetic methods in historical linguistics
-- Native South American languages
+- Phylogenetic methods in historical linguistics ("phylolinguistics")
+- Sound correspondences and inference of sound changes
+- Native South American languages (Tupían, Arawan families)
+- Large language models in production environments
+- Computer game programming (Tafl games with chess-inspired algorithms)
 - Data management and stewardship in scientific research
 - Reproducible research methodologies
 - Digital humanities applications
 
 ## Contact
 
-**Email:** tiago@tresoldi.org  
-**GitHub:** [tresoldi](https://github.com/tresoldi)  
-**Twitter:** [@tresoldi](https://twitter.com/tresoldi)
+<img src="mail.svg" style="width:16px;vertical-align:middle;" /> **Email:** tiago@tresoldi.org  
+<img src="github.svg" style="width:16px;vertical-align:middle;" /> **GitHub:** [tresoldi](https://github.com/tresoldi)  
+<img src="twitter.svg" style="width:16px;vertical-align:middle;" /> **Twitter:** [@tresoldi](https://twitter.com/tresoldi)
 
 [Download CV (PDF)](/assets/cv.pdf)

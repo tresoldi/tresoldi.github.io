@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Tiago Tresoldi
+title: "Tiago Tresoldi's Home Page"
 email: tiago@tresoldi.org
 description: >- # this means to ignore newlines until "baseurl:"
-  Insight Analyst at Etraveli and Affiliate Researcher at Uppsala University.
+  Language & Literature. Evolution. Programming. Etc.
   Computational historical linguistics, data science, and academic research.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.tresoldi.org" # the base hostname & protocol for your site, e.g. http://example.com
@@ -28,6 +28,14 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+
+# Header pages order
+header_pages:
+  - about.md
+  - research.md
+  - software.md
+  - llm.md
+  - blog.md
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

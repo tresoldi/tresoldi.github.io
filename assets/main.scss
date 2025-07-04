@@ -1,0 +1,156 @@
+---
+---
+
+@import "minima";
+
+// Custom styles inspired by 2023 design
+html {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #1a1a1a;
+  background-color: #fdfdfd;
+}
+
+body {
+  max-width: 36em;
+  margin: 0 auto;
+  padding: 50px;
+  hyphens: auto;
+  word-wrap: break-word;
+  text-rendering: optimizeLegibility;
+  font-kerning: normal;
+}
+
+// Header styling similar to 2023 version
+.site-header {
+  border-top: none;
+  border-bottom: none;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.site-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  letter-spacing: normal;
+  margin-bottom: 0.2em;
+}
+
+.site-nav {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.site-nav .page-link {
+  color: #1a1a1a;
+  margin: 0 0.5em;
+  text-decoration: none;
+}
+
+.site-nav .page-link:hover {
+  text-decoration: underline;
+}
+
+// Content styling
+.page-content {
+  padding: 0;
+}
+
+.post-content, .page-content {
+  h1 {
+    font-size: 1.5em;
+    margin-top: 1.4em;
+  }
+  
+  h2 {
+    font-size: 1.3em;
+    margin-top: 1.4em;
+  }
+  
+  h3 {
+    font-size: 1.1em;
+    margin-top: 1.4em;
+  }
+}
+
+// Links
+a {
+  color: #1a1a1a;
+  
+  &:visited {
+    color: #1a1a1a;
+  }
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Images
+img {
+  max-width: 100%;
+}
+
+// Code styling
+code {
+  font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+  font-size: 85%;
+  background-color: #f8f8f8;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+pre {
+  background-color: #f8f8f8;
+  padding: 1em;
+  border-radius: 5px;
+  overflow-x: auto;
+  
+  code {
+    background-color: transparent;
+    padding: 0;
+  }
+}
+
+// Footer
+.site-footer {
+  border-top: 1px solid #e8e8e8;
+  margin-top: 3em;
+  padding-top: 2em;
+  text-align: center;
+  font-size: 0.9em;
+  color: #666;
+}
+
+// Mobile responsiveness
+@media (max-width: 600px) {
+  body {
+    font-size: 0.9em;
+    padding: 1em;
+  }
+  
+  .site-nav .page-link {
+    display: block;
+    margin: 0.5em 0;
+  }
+}
+
+// Print styles
+@media print {
+  body {
+    background-color: transparent;
+    color: black;
+    font-size: 12pt;
+    max-width: none;
+    padding: 0;
+  }
+  
+  .site-nav, .site-footer {
+    display: none;
+  }
+  
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+}
