@@ -25,6 +25,8 @@ Extensive work with LLMs both via APIs and locally deployed systems for linguist
 ### Tafl Game Programming
 Computer game development inspired by chess programming techniques for ancient Nordic board games.
 
+<div class="decorative-border"></div>
+
 ## Recent Publications
 
 **[Selected Publications - Full list available with BibTeX]**

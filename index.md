@@ -4,7 +4,7 @@ title: "Tiago Tresoldi's Home Page"
 subtitle: "Language & Literature. Evolution. Programming. Etc."
 ---
 
-<img src="tiago.jpg" style="float:right;width:40%;margin-left:2em;" alt="Tiago Tresoldi" />
+<img src="tiago.jpg" class="profile-photo" style="float:right;width:40%;margin-left:2em;" alt="Tiago Tresoldi" />
 
 I am an **Insight Analyst** at [Etraveli](https://www.etraveli.com) in Uppsala, Sweden, and an **Affiliate Researcher** at the [Department of Linguistics and Philology](https://www.lingfil.uu.se/english/) of Uppsala University.
 
