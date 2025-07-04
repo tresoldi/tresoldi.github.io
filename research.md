@@ -10,18 +10,40 @@ My research focuses on computational historical linguistics, with particular emp
 
 ## Current Projects
 
-### Phylogenetic Methods in Historical Linguistics
-Development and application of computational methods for inferring language relationships and evolutionary patterns.
+### PhyloVector
+Vector-based approaches to phylogenetic analysis in historical linguistics.
 
-### South American Language Documentation
-Collaborative work on documenting and analyzing indigenous languages of South America, with focus on morphological and phonological systems.
+### Uralic Language Phylogeny
+Computational methods for understanding relationships within the Uralic language family.
 
-### Data Stewardship in Linguistics
-Research on best practices for data management, sharing, and preservation in linguistic research.
+### Arawan Family Analysis
+Phylogenetic study of the Arawan language family of South America.
 
-## Publications
+### Large Language Models in Production
+Extensive work with LLMs both via APIs and locally deployed systems for linguistic analysis.
 
-*Publications list to be updated*
+### Tafl Game Programming
+Computer game development inspired by chess programming techniques for ancient Nordic board games.
+
+## Recent Publications
+
+**[Selected Publications - Full list available with BibTeX]**
+
+**Articles:**
+
+[1] Christoph Rzymski, Tiago Tresoldi, Simon J. Greenhill, et al. "The Database of Cross-Linguistic Colexifications, reproducible analysis of cross-linguistic polysemies." *Scientific Data*, 7(1):1–12, 2020.
+
+[2] Johann-Mattis List, Simon J. Greenhill, Cormac Anderson, Thomas Mayer, Tiago Tresoldi, and Robert Forkel. "CLICS2: An improved database of cross-linguistic colexifications assembling lexical data with the help of cross-linguistic data formats." *Linguistic Typology*, 22(2):277–306, 2018.
+
+[3] Tiago Tresoldi. "Ngesh: a Python library for synthetic phylogenetic data." *Journal of Open Source Software*, 6(66):3173, 2021.
+
+[4] Tiago Tresoldi. "DAFSA: a Python library for Deterministic Acyclic Finite State Automata." *Journal of Open Source Software*, 5(46):1986, 2020.
+
+[5] Tiago Tresoldi. "O Ulisses dos muitos retornos: por uma história do clássico." *Nuntius Antiquus*, 13(1):227–251, 2017.
+
+**Book Chapters:**
+
+[1] Tiago Tresoldi, Christoph Rzymski, Robert Forkel, Simon J. Greenhill, Johann-Mattis List, and Russell D. Gray. "Managing Historical Linguistic Data for Computational Phylogenetics and Computer-Assisted Language Comparison." In *The Open Handbook of Linguistic Data Management*. The MIT Press, 2022.
 
 ## Talks & Presentations
 
