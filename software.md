@@ -13,33 +13,31 @@ I develop open-source tools for computational linguistics and data analysis. All
 ### dafsa
 Deterministic Acyclic Finite State Automaton library for efficient string matching and morphological analysis.
 
-**Repository:** [github.com/tresoldi/dafsa](https://github.com/tresoldi/dafsa)
+**Repository:** [https://github.com/tresoldi/dafsa](https://github.com/tresoldi/dafsa)
+**PyPI:** [https://pypi.org/project/dafsa/](https://pypi.org/project/dafsa/)
 
 ### ngesh
 Library for generating synthetic phylogenetic data for testing and validation of computational methods.
 
-**Repository:** [github.com/tresoldi/ngesh](https://github.com/tresoldi/ngesh)
+**Repository:** [https://github.com/tresoldi/ngesh](https://github.com/tresoldi/ngesh)
+**PyPI:** [https://pypi.org/project/ngesh/](https://pypi.org/project/ngesh/)
 
 ### freqprob
 Tools for computing frequency probabilities in linguistic datasets.
 
-**Repository:** [github.com/tresoldi/freqprob](https://github.com/tresoldi/freqprob)
+**Repository:** [https://github.com/tresoldi/freqprob](https://github.com/tresoldi/freqprob)
 
 ### asymcat
 Statistical analysis of asymmetric categorical data with applications in typological research.
 
-**Repository:** [github.com/tresoldi/asymcat](https://github.com/tresoldi/asymcat)
+**Repository:** [https://github.com/tresoldi/asymcat](https://github.com/tresoldi/asymcat)
 
 ## C Tools
 
 ### acopost
 Part-of-speech tagging system implemented in C for efficient text processing.
 
-**Repository:** [github.com/tresoldi/acopost](https://github.com/tresoldi/acopost)
-
-## Other Projects
-
-*Additional software projects and tools will be listed here as they are developed.*
+**Repository:** [https://github.com/tresoldi/acopost](https://github.com/tresoldi/acopost)
 
 ## Philosophy
 

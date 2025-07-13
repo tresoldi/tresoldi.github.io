@@ -1,0 +1,44 @@
+{
+  "categories": {
+    "Python Libraries": [
+      {
+        "name": "dafsa",
+        "description": "Deterministic Acyclic Finite State Automaton library for efficient string matching and morphological analysis.",
+        "repository_url": "https://github.com/tresoldi/dafsa",
+        "pypi_url": "https://pypi.org/project/dafsa/",
+        "language": "Python"
+      },
+      {
+        "name": "ngesh",
+        "description": "Library for generating synthetic phylogenetic data for testing and validation of computational methods.",
+        "repository_url": "https://github.com/tresoldi/ngesh",
+        "pypi_url": "https://pypi.org/project/ngesh/",
+        "language": "Python"
+      },
+      {
+        "name": "freqprob",
+        "description": "Tools for computing frequency probabilities in linguistic datasets.",
+        "repository_url": "https://github.com/tresoldi/freqprob",
+        "pypi_url": null,
+        "language": "Python"
+      },
+      {
+        "name": "asymcat",
+        "description": "Statistical analysis of asymmetric categorical data with applications in typological research.",
+        "repository_url": "https://github.com/tresoldi/asymcat",
+        "pypi_url": null,
+        "language": "Python"
+      }
+    ],
+    "C Tools": [
+      {
+        "name": "acopost",
+        "description": "Part-of-speech tagging system implemented in C for efficient text processing.",
+        "repository_url": "https://github.com/tresoldi/acopost",
+        "pypi_url": null,
+        "language": "C"
+      }
+    ],
+    "Other Projects": []
+  }
+}

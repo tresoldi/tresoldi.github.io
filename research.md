@@ -27,25 +27,35 @@ Computer game development inspired by chess programming techniques for ancient N
 
 <div class="decorative-border"></div>
 
-## Recent Publications
+## Publications
 
-**[Selected Publications - Full list available with BibTeX]**
+### Journal Articles
 
-**Articles:**
+**Ngesh: a Python library for synthetic phylogenetic data**  
+Tresoldi, Tiago  
+*Journal of Open Source Software*, 6(66):3173, 2021.
 
-[1] Christoph Rzymski, Tiago Tresoldi, Simon J. Greenhill, et al. "The Database of Cross-Linguistic Colexifications, reproducible analysis of cross-linguistic polysemies." *Scientific Data*, 7(1):1–12, 2020.
+**The Database of Cross-Linguistic Colexifications, reproducible analysis of cross-linguistic polysemies**  
+Rzymski, Christoph et al.  
+*Scientific Data*, 7(1):1--12, 2020.
 
-[2] Johann-Mattis List, Simon J. Greenhill, Cormac Anderson, Thomas Mayer, Tiago Tresoldi, and Robert Forkel. "CLICS2: An improved database of cross-linguistic colexifications assembling lexical data with the help of cross-linguistic data formats." *Linguistic Typology*, 22(2):277–306, 2018.
+**DAFSA: a Python library for Deterministic Acyclic Finite State Automata**  
+Tresoldi, Tiago  
+*Journal of Open Source Software*, 5(46):1986, 2020.
 
-[3] Tiago Tresoldi. "Ngesh: a Python library for synthetic phylogenetic data." *Journal of Open Source Software*, 6(66):3173, 2021.
+**CLICS2: An improved database of cross-linguistic colexifications assembling lexical data with the help of cross-linguistic data formats**  
+List, Johann-Mattis et al.  
+*Linguistic Typology*, 22(2):277--306, 2018.
 
-[4] Tiago Tresoldi. "DAFSA: a Python library for Deterministic Acyclic Finite State Automata." *Journal of Open Source Software*, 5(46):1986, 2020.
+**O Ulisses dos muitos retornos: por uma história do clássico**  
+Tresoldi, Tiago  
+*Nuntius Antiquus*, 13(1):227--251, 2017.
 
-[5] Tiago Tresoldi. "O Ulisses dos muitos retornos: por uma história do clássico." *Nuntius Antiquus*, 13(1):227–251, 2017.
+### Book Chapters
 
-**Book Chapters:**
-
-[1] Tiago Tresoldi, Christoph Rzymski, Robert Forkel, Simon J. Greenhill, Johann-Mattis List, and Russell D. Gray. "Managing Historical Linguistic Data for Computational Phylogenetics and Computer-Assisted Language Comparison." In *The Open Handbook of Linguistic Data Management*. The MIT Press, 2022.
+**Managing Historical Linguistic Data for Computational Phylogenetics and Computer-Assisted Language Comparison**  
+Tresoldi, Tiago et al.  
+In *The Open Handbook of Linguistic Data Management*. The MIT Press, 2022.
 
 ## Talks & Presentations
 
