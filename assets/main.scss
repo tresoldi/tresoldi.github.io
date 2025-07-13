@@ -31,14 +31,25 @@ html {
 }
 
 body {
-  max-width: 42em;
+  max-width: 90%;
+  width: 100%;
   margin: 0 auto;
-  padding: 3rem 2rem;
+  padding: 3rem 4%;
   hyphens: auto;
   word-wrap: break-word;
   text-rendering: optimizeLegibility;
   font-kerning: normal;
   background-color: var(--background);
+  
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+    padding: 3rem 6%;
+  }
+  
+  @media (min-width: 1600px) {
+    max-width: 1400px;
+    padding: 3rem 8%;
+  }
 }
 
 // Modern header styling
@@ -325,7 +336,8 @@ blockquote {
 @media (max-width: 768px) {
   body {
     font-size: 18px;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 3%;
+    max-width: 95%;
   }
   
   .site-title {
@@ -356,6 +368,14 @@ blockquote {
   
   .profile-photo {
     width: 35% !important;
+  }
+}
+
+// Tablet and medium screen optimization
+@media (min-width: 769px) and (max-width: 1199px) {
+  body {
+    max-width: 85%;
+    padding: 3rem 3%;
   }
 }
 
