@@ -4,10 +4,12 @@
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
     
-    <h1 class="site-title">{{ site.title | escape }}</h1>
-    {%- if site.description -%}
-      <div class="site-description">{{ site.description }}</div>
-    {%- endif -%}
+    <div class="site-header-content">
+      <h1 class="site-title">{{ site.title | escape }}</h1>
+      {%- if site.description -%}
+        <p class="site-description">{{ site.description }}</p>
+      {%- endif -%}
+    </div>
 
     {%- if titles_size > 0 -%}
       <nav class="site-nav">

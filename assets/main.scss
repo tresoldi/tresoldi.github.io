@@ -62,6 +62,11 @@ body {
   background: linear-gradient(135deg, var(--background) 0%, var(--paper) 100%);
 }
 
+.site-header-content {
+  display: block;
+  width: 100%;
+}
+
 .site-title {
   font-family: 'Inter', sans-serif;
   font-size: 2rem;
@@ -70,14 +75,18 @@ body {
   margin-bottom: 0.5rem;
   color: var(--text-primary);
   transition: var(--transition);
+  display: block;
+  width: 100%;
 }
 
 .site-description {
   font-style: italic;
   color: var(--text-secondary);
   margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
   font-size: 1.1rem;
-  white-space: pre-line;
+  display: block;
+  width: 100%;
 }
 
 .site-nav {
