@@ -1,25 +1,33 @@
-<header class="site-header">
-  <div class="wrapper">
-    {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
-    {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-    
-    <div class="site-header-content">
-      <h1 class="site-title">{{ site.title | escape }}</h1>
-      {%- if site.description -%}
-        <p class="site-description">{{ site.description }}</p>
-      {%- endif -%}
-    </div>
+<!--- Header and nav template site-wide -->
+<header>
+	{% if site.header == true %}
+		<h1 class="header-title"><a href="{{site.baseurl}}/">{{ site.title }}</a></h1>
+		{% unless site.subtitle == "" or site.subtitle == nil %}
+			<h2 class="header-subtitle">{{ site.subtitle }}</h2>
+    {% endunless %}
+	{% endif %}
 
-    {%- if titles_size > 0 -%}
-      <nav class="site-nav">
-        {%- for path in page_paths -%}
-          {%- assign my_page = site.pages | where: "path", path | first -%}
-          {%- if my_page.title -%}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-          {%- endif -%}
-        {%- endfor -%}
-      </nav>
-    {%- endif -%}
-  </div>
+  <nav class="group">
+    <ul>
+    {%- assign pg = site.pages | sort: "weight" %}
+    {%- for node in pg %}
+      {%- if node.nav_exclude or node.url contains ".css" or node.url contains ".scss" %}
+        {%- continue %}
+      {%- endif %}
+
+      {%- assign title = node.nav_title | default: node.title %}
+      {%- unless title and title != "" %}
+        {%- continue %}
+      {%- endunless %}
+
+      <li>
+        <a href="{{node.url | prepend: site.baseurl}}"
+          {%- if page.url == node.url %} class="active" {% endif -%}
+        >
+          {{ title }}
+        </a>
+      </li>
+    {%- endfor %}
+    </ul>
+  </nav>
 </header>
