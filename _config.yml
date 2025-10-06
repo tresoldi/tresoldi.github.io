@@ -34,7 +34,6 @@ header_pages:
   - about.md
   - research.md
   - software.md
-  - llm.md
   - blog.md
 
 # Exclude from processing.
