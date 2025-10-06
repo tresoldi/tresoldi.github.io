@@ -1,0 +1,193 @@
+/* Custom typography and iconography enhancements */
+
+/* Small caps for acronyms (2-4 uppercase letters) */
+abbr, .caps {
+    font-variant: small-caps;
+    font-size: 1.1em;
+    letter-spacing: 0.05em;
+}
+
+/* Proper typographic characters - handled by kramdown/Jekyll */
+/* Em-dashes (---), en-dashes (--), ellipses (...), smart quotes */
+
+/* Custom section divider with asterism */
+hr.section-divider, .section-divider {
+    border: none;
+    text-align: center;
+    margin: 3rem 0;
+
+    &::before {
+        content: '⁂';
+        font-size: 1.5rem;
+        color: #666;
+        letter-spacing: 0.5em;
+        display: block;
+    }
+}
+
+/* Pull quotes */
+.pull-quote {
+    font-size: 1.6rem;
+    font-style: italic;
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    border-left: none;
+    color: #333;
+
+    &::before {
+        content: '∴';
+        display: block;
+        margin-bottom: 0.5rem;
+        color: #999;
+    }
+}
+
+/* Dark mode adjustments for custom elements */
+@media (prefers-color-scheme: dark) {
+    hr.section-divider::before, .section-divider::before {
+        color: #999;
+    }
+
+    .pull-quote {
+        color: #ccc;
+
+        &::before {
+            color: #666;
+        }
+    }
+}
+
+/* Enhanced code blocks */
+pre {
+    background-color: rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    padding: 1rem;
+    margin: 1.4rem 0;
+    overflow-x: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+    pre {
+        background-color: rgba(255, 255, 255, 0.05);
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* Inline code */
+code {
+    font-family: "Consolas", "Monaco", "Lucida Console", monospace;
+    font-size: 0.9em;
+    background-color: rgba(0, 0, 0, 0.04);
+    padding: 0.1em 0.3em;
+    border-radius: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+    code {
+        background-color: rgba(255, 255, 255, 0.08);
+    }
+}
+
+/* Math styling to match typography */
+.MathJax, .math {
+    font-family: et-book, Palatino, "Palatino Linotype", Georgia, serif;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.4rem 0;
+    font-size: 1.3rem;
+}
+
+thead th {
+    font-variant: small-caps;
+    font-weight: 400;
+    border-bottom: 1px solid #111;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+tbody td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Right-align numeric columns */
+td.numeric, th.numeric {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-color-scheme: dark) {
+    thead th {
+        border-bottom-color: #ddd;
+    }
+
+    tbody td {
+        border-bottom-color: #333;
+    }
+}
+
+/* Footer styling */
+.page-footer {
+    margin-top: 4rem;
+    padding: 2rem 0;
+    border-top: 1px solid #ccc;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.page-footer .credits {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.page-footer .social-links {
+    margin-left: 1rem;
+}
+
+.page-footer .social-links a {
+    margin-left: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    .page-footer {
+        border-top-color: #444;
+        color: #999;
+    }
+}
+
+/* Profile photo styling */
+.profile-photo {
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+    .profile-photo {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    }
+}
+
+/* Bibliography styling */
+.bibliography-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.bibliography-list li {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    text-indent: -2rem;
+    line-height: 1.8;
+}
