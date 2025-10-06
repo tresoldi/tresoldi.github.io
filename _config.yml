@@ -15,10 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: "Tiago Tresoldi's Home Page"
 email: tiago@tresoldi.org
-description: |- # this means to ignore newlines until "baseurl:"
-  Language & Literature. Evolution. Programming. Etc.
-
-  Computational historical linguistics, data science, and academic research.
+description: "Language & Literature. Evolution. Programming. Etc."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.tresoldi.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: tresoldi
