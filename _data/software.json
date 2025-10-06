@@ -2,6 +2,13 @@
   "categories": {
     "Python Libraries": [
       {
+        "name": "nhandu",
+        "description": "Literate programming for Python: write executable documents in plain .py files. Transforms Python files with markdown comments into reproducible reports with captured output, plots, and rich object rendering. Git-friendly alternative to Jupyter notebooks.",
+        "repository_url": "https://github.com/tresoldi/nhandu",
+        "pypi_url": "https://pypi.org/project/nhandu/",
+        "language": "Python"
+      },
+      {
         "name": "dafsa",
         "description": "Deterministic Acyclic Finite State Automaton library for efficient string matching and morphological analysis.",
         "repository_url": "https://github.com/tresoldi/dafsa",

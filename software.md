@@ -10,6 +10,12 @@ I develop open-source tools for computational linguistics and data analysis. All
 
 ## Python Libraries
 
+### nhandu
+Literate programming for Python: write executable documents in plain .py files. Transforms Python files with markdown comments into reproducible reports with captured output, plots, and rich object rendering. Git-friendly alternative to Jupyter notebooks.
+
+**Repository:** [https://github.com/tresoldi/nhandu](https://github.com/tresoldi/nhandu)
+**PyPI:** [https://pypi.org/project/nhandu/](https://pypi.org/project/nhandu/)
+
 ### dafsa
 Deterministic Acyclic Finite State Automaton library for efficient string matching and morphological analysis.
 
