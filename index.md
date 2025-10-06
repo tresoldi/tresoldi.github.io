@@ -12,7 +12,7 @@ My research focuses on **computational historical linguistics**, particularly de
 
 In my current work, I have been extensively involved with **large language models in production environments**, both via APIs and locally deployed systems. I'm also working on computer versions of **Tafl games**, inspired by chess programming techniques.
 
-I love programming, primarily using Python but also exploring R, Julia, Nim, and C. My Ph.D. thesis examined the classical as a means of relationship with otherness, as showcased by the literary development of Odysseus.
+I love programming, primarily using Python but also exploring R, Julia, and C. My Ph.D. thesis examined the classical as a means of relationship with otherness, as showcased by the literary development of Odysseus. Which is fitting, I suppose, since I've been wandering between disciplines ever since: literature to linguistics to data science, still not quite sure if I'm heading back to Ithaca or just circling. Let's hope I don't end up like Dante's Ulysses, sailing past the pillars and into the abyss for the sake of one more intellectual adventure.
 
 ## Current Projects
 
