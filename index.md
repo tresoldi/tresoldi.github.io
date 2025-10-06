@@ -1,7 +1,7 @@
 ---
-layout: home
-title: "Tiago Tresoldi's Home Page"
-subtitle: "Language & Literature. Evolution. Programming. Etc."
+layout: page
+title: "Tiago Tresoldi"
+nav_exclude: true
 ---
 
 <img src="tiago.jpg" class="profile-photo" style="float:right;width:40%;margin-left:2em;" alt="Tiago Tresoldi" />

@@ -1,0 +1,44 @@
+/*
+ * Import ET Book styles
+ * adapted from https://github.com/edwardtufte/et-book/blob/gh-pages/et-book.css
+ * There are also versions available with ff/fi/fl ligatures enabled, but
+ * honestly I find that they reduce legibility rather than improving it.
+ */
+
+/* The default family has line numerals, where numbers all look like uppercase letters. */
+@font-face {
+    font-family: "et-book";
+    src: url("../fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "et-book";
+    src: url("../fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+    font-display: block;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "et-book";
+    src: url("../fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: block;
+    text-rendering: optimizeLegibility;
+}
+
+/* The old-style family has oldstyle numerals where numbers look like lowercase letters. */
+@font-face {
+    font-family: "et-book-roman-old-style";
+    src: url("../fonts/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+    text-rendering: optimizeLegibility;
+}

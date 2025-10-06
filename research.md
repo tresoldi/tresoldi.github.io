@@ -2,6 +2,7 @@
 layout: page
 title: Research
 permalink: /research/
+weight: 2
 ---
 
 # Research
@@ -25,37 +26,9 @@ Extensive work with LLMs both via APIs and locally deployed systems for linguist
 ### Tafl Game Programming
 Computer game development inspired by chess programming techniques for ancient Nordic board games.
 
-<div class="decorative-border"></div>
+<hr class="section-divider" />
 
-## Publications
-
-### Journal Articles
-
-**Ngesh: a Python library for synthetic phylogenetic data**  
-Tresoldi, Tiago  
-*Journal of Open Source Software*, 6(66):3173, 2021.
-
-**The Database of Cross-Linguistic Colexifications, reproducible analysis of cross-linguistic polysemies**  
-Rzymski, Christoph et al.  
-*Scientific Data*, 7(1):1--12, 2020.
-
-**DAFSA: a Python library for Deterministic Acyclic Finite State Automata**  
-Tresoldi, Tiago  
-*Journal of Open Source Software*, 5(46):1986, 2020.
-
-**CLICS2: An improved database of cross-linguistic colexifications assembling lexical data with the help of cross-linguistic data formats**  
-List, Johann-Mattis et al.  
-*Linguistic Typology*, 22(2):277--306, 2018.
-
-**O Ulisses dos muitos retornos: por uma história do clássico**  
-Tresoldi, Tiago  
-*Nuntius Antiquus*, 13(1):227--251, 2017.
-
-### Book Chapters
-
-**Managing Historical Linguistic Data for Computational Phylogenetics and Computer-Assisted Language Comparison**  
-Tresoldi, Tiago et al.  
-In *The Open Handbook of Linguistic Data Management*. The MIT Press, 2022.
+{% include bibliography.html %}
 
 ## Talks & Presentations
 

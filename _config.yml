@@ -13,26 +13,30 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Tiago Tresoldi's Home Page"
+title: "Tiago Tresoldi"
+author: "Tiago Tresoldi"
 email: tiago@tresoldi.org
 description: "Language & Literature. Evolution. Programming. Etc."
+subtitle: "Computational historical linguistics, data science, and academic research"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.tresoldi.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: tresoldi
-github_username:  tresoldi
+github_username: tresoldi
+
+# Tufte theme settings
+header: true
+show_author: true
 
 # Build settings
 markdown: kramdown
-theme: minima
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+highlighter: rouge
+permalink: /blog/:year/:month/:day/:title
+timezone: Europe/Stockholm
+excerpt_separator: <!--more-->
+
 plugins:
   - jekyll-feed
-
-# Header pages order
-header_pages:
-  - about.md
-  - research.md
-  - software.md
-  - blog.md
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

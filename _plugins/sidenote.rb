@@ -1,0 +1,1 @@
+../lib/jekyll-theme-tufte/sidenote.rb
