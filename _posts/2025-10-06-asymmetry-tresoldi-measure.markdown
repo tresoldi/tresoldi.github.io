@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "On Asymmetry and a New Measure"
-date: 2025-10-06 14:00:00 +0200
+date: 2025-10-06 08:00:00 +0200
 tags: [asymmetry, computational linguistics, methodology, asymcat]
 ---
 
