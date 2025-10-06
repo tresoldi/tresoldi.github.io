@@ -1,0 +1,5 @@
+# Python dependencies for generate_pages.py
+# Currently uses only Python standard library modules (json, re, datetime, pathlib)
+# This file is provided for documentation and future extensibility
+
+# No external dependencies required for current implementation
