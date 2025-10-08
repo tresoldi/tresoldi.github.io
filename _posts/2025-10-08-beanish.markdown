@@ -1,0 +1,70 @@
+---
+layout: post
+title: "What We Talk About When We Talk About ᓭᘖᔭᓄ"
+date: 2025-10-08 10:00:00 +0200
+tags: [beanish, undeciphered scripts, computational linguistics, xkcd]
+---
+
+Here's what we know: ᓭᘖᔭᓄ means "water." Maybe. Probably. With I'd say about 85% confidence, which in undeciphered languages is as good as knowing. Everything else? Educated guesswork built on a corpus you could fit on a napkin, statistical methods designed for millions of words applied to thirty-five utterances, and the kind of obsessive pattern-recognition that used to be called scholarship.
+
+I've spent an embarrassing amount of time on a language that doesn't exist, that lives in a webcomic, that gives us (in the most stretched counting) exactly thirty-five utterances to work with, all in a script that looks like someone put Canadian Aboriginal Syllabics through an Elvish filter. This is not my proudest academic moment, but it might very well be my most instructive. And, funny story, it something that helped me secure my first post-doc in linguistics (something for the future, maybe).
+
+And here's the irony, the thing that keeps pulling me back: we have a Rosetta. Literally -- not the one you expect, but close enough and by design. One of the speakers of this language, a character the fandom nicknamed "Rosetta," speaks English to the protagonists. Not fluent English, broken English, second-language English with its calques and colexifications and substrate interference patterns. A Rosetta that, instead of giving us translations, gives us the *errors*. We have to work backward from what she gets wrong to figure out what her native language must be like.
+
+## The Corpus, Such As It Is
+
+If you know [xkcd](https://xkcd.org), you know its author, Randall Munroe, doesn't do things halfway. In 2013, he published "Time" (comic #1190), a science fiction story told in over three thousand frames(!) that updated automatically over four months. Set in the far future Mediterranean Basin, just before the sea returns in a cyclic reflooding -— Braudel's *longue durée* playing out in geological time -— the comic follows two protagonists, named Cueball and Megan by the fandom, as they discover evidence of previous civilizations and eventually encounter a group of people living in a fortress near what used to be Marseille, a Château d'If in spirit. These people wear black beanies. The fandom called them Beanies. Their language became Beanish.
+
+Munroe created Beanish with help from an unnamed linguist, and he's been clear about his intent: he wanted it to be decodable but difficult, "as different from English as our language is from Linear A." Which is to say: good luck.
+
+What we have is thirty-five utterances, ranging from single words (ᖉᑦ, likely "yes") to full sentences with what looks like a medium-complex morphology. The script uses unique symbols which I have mapped to the Canadian Aboriginal Syllabics due to the graphical similarity (maybe my biggest claim in the field of Beanish studies), which gives us Unicode support but tells us nothing about the actual phonology. We have images of the text from the comic frames, context from the narrative, and Rosetta's broken English spanning a handful of utterances with helpful overlay corrections showing what words she wanted to use but couldn't quite access.
+
+That's it. Thirty-five utterances to decode a language. Linear A has hundreds inscriptions (besides the Phaistos disk, of course) and remains undeciphered. The Voynich manuscript has 240 pages and is gibberish or genius depending on who you ask. Beanish has thirty-five sentences and a Rosetta Stone that works backward. This is either hermeneutics or pareidolia, and I've been doing it long enough that I'm no longer sure which.
+
+## The Method
+
+The methodological challenge is obvious: how do you do quantitative linguistics with a corpus this small? Standard statistical methods assume you have enough data for the law of large numbers to kick in. We don't.
+
+So we do what you do with small corpora: we smooth, we bootstrap, we compare. I've been using my own [`asymcat`](https://github.com/tresoldi/asymcat) library for asymmetric categorical associations, which lets me analyze glyph-to-glyph transitions with directional measures (because if you're going to do this, you might as well use your own tools and call it research infrastructure). And my [`freqprob`](https://github.com/tresoldi/freqprob) library for probability smoothing, because with thirty-five utterances, you're going to see a lot of zero counts, and you need something smarter than "divide by zero equals undefined." The scholar in me wants to claim this is methodological innovation and ask for at least a small grant. The honest part admits it's making the best of a bad situation and that I might be erecting a mathematical scaffolding just to make it easier to fool myself.
+
+We start with the basics: glyph frequencies, positional distributions, bigram transitions. Beanish has about 40-50 distinct glyphs depending on how you count diacritics, which puts it more in the range of an abugida (think Devanagari, Ethiopic) than a pure alphabet. Some glyphs only appear word-initially. Some only word-finally. There are three diacritics that look like punctuation but might be grammatical morphemes. The positional restrictions are systematic enough to suggest real phonotactic constraints, not just random generation.
+
+Then we calculate entropy. Shannon entropy for the character distribution, conditional entropy for bigram predictability. Natural languages typically have a second-order entropy (h₂) between 2 and 4 bits. Random text is higher. Beanish comes in at about 2.8, right in the linguistic sweet spot. It's not random. It's not a cipher (Friedman's methods would have cracked it). It's language-shaped, more than Voynichese statistically.
+
+We test Zipf's law, which says word frequencies should follow a power law distribution: the most common word appears twice as often as the second most common, three times as often as the third, and so on. With thirty-five utterances, Zipf's law is aspirational at best, but Beanish fits. The slope is wrong, but that might just be sampling noise. 
+
+And then we compare. We take corpora from a dozen languages, French, Arabic, English, Mandarin, Turkish, Swahili, Lojban for good measure, and we sample them down to thirty-five utterances each. Then we run the same analyses. How does Beanish's entropy compare? Its type-token ratio? Its character distribution? Does it look more like a Romance language or a Semitic one? More like an agglutinative language or an isolating one?
+
+## The Rosetta Stone Problem
+
+Rosetta speaks to the protagonists in English from frame 2865 to 2919. And because Munroe is a thoughtful worldbuilder, her English isn't just bad, it's bad in linguistically consistent ways. She uses "whence" instead of "from where." She says "transpires" instead of "lives." She calls a house a "fortress" and uses "somewhat" as a discourse marker. Words that should be single morphemes in English come out as overlapping alternatives, as if she's translating from a language where semantic fields are carved up differently.
+
+Classic substrate interference from L2 acquisition. Her native language (Beanish, presumably, but there are indications that we have at least a third language involved) structures meaning differently, and when she maps onto English, the seams show. When she says "your sea does not stand alone" instead of "your sea is not isolated," we're seeing a calque, a direct translation of a Beanish idiom that doesn't quite work in English, like me saying "to repeat food" for "to have seconds" (thanks, Deepthi). When she uses "tongue" and "language" interchangeably, we're seeing colexification, two concepts that English separates but Beanish might not.
+
+The method is network-building. Link the substitutions. Note the archaisms. Analyze the syntax. The network clusters start to look like Romance language patterns, but that might very well be the native Italian and Portuguese speaker in me. The few colexifications seem to map onto French, Spanish, Italian more than Germanic or Semitic languages. The archaic register suggests formal instruction or literary exposure. The syntax is consistently SVO, which is typologically common but still constrains the possibilities.
+
+It's backward decipherment. We're not translating Beanish into English. We're inferring Beanish structure from the way a native speaker fails to translate it into English. The error is the data.
+
+## What We Know (Sort Of)
+
+Working with Lukas, who for years has been pushing me to have this in a more academic frame than my old blog, we've built a confidence-rated lexicon. High confidence (≥70%): ᓭᘖᔭᓄ "water," ᖉᑦ "yes," ᘈᘊᘖ "hello," ᘊᒣᑦᖽᖆ "(the) castle," ᕒᖚᐧ "from." These are words that appear in unambiguous contexts, often multiple times, sometimes with explicit teaching (there's a scene where a Beanish character repeats ᓭᘖᔭᓄ until the protagonists understand).
+
+Medium confidence (40-70%): ᔪ- as a question marker prefix, ᘊ- as a determiner or augmentative, ᒣᓭᐧᖊᔕ as some kind of paste or cream, probably medicinal. The morphology is getting clearer: Beanish is agglutinative, with productive prefixes and possibly infixes. Modifiers follow nouns (ᘊᖊᑦᓄ ᘊᓭᐧᑲ, "sea Balearic," not "Balearic sea"). The verb system is opaque, but there's evidence of aspectual distinctions.
+
+Low confidence (< 40%): pretty much everything else. We have hypotheses about word order (probably SVO, based on parallel utterances and Rosetta's English). We have guesses about diacritic function (grammatical markers vs. punctuation). We have speculation about allographic variation (different glyphs for the same phoneme in different contexts, or just artistic inconsistency?).
+
+Lukas and I are working toward a paper, maybe, hopefully, if we can be honest enough about our uncertainty that reviewers don't reject it on principle. The working title is "Counting the Beans," which is either charming or insufferable depending on your tolerance for puns. The goal isn't to claim we've deciphered Beanish, because we haven't, we've barely scratched it. The goal is to show what you *can* do with a corpus this small, what methods survive contact with extreme data scarcity, and what it means to work at the edge of statistical significance where every utterance is precious and every pattern might be noise.
+
+## Why This Matters (Or Why I Tell Myself It Does)
+
+There's a serious point lurking in this hobby, beyond the obvious "I enjoy puzzles and procrastination." Small corpus linguistics is real. We encounter it all the time in historical work: extinct languages with ten inscriptions, endangered languages with three elderly speakers, manuscript fragments with partial text. The methodological challenges of Beanish, how do you extract signal from noise when you have thirty-five data points, are the challenges of actual linguistic fieldwork and historical reconstruction. Take the example of the "Indian" language of the Charition mime, which Freja and I presented at ICHL in Heidelberg.
+
+And there's something about working backward from errors, about using Rosetta's imperfect English as evidence for Beanish structure, that feels like it should generalize. Second-language acquisition studies do this all the time, infer L1 properties from L2 performance, but we rarely think about it as a decipherment strategy. Treat interlanguage not as error but as data—this is Hymes's ethnography of communication applied to decipherment.
+
+The situation echoes the Rosetta Stone, where Champollion had to work through rendering choices and translational mismatch, not just read across parallel texts. We have to read the failures, trace the mismatches, reconstruct the source by understanding where the translation breaks down.
+
+That's what we're doing with Beanish. And if it works, if we can show that you can extract meaningful linguistic information from a tiny corpus and backward inference from L2 errors, then maybe the method survives past the hobby. Maybe it's useful for something real. Or maybe it's just a webcomic, and I've spent too much time staring at ᓭᘖᔭᓄ, and none of this means anything.
+
+But I think Rosetta's broken English is telling us something about how meaning breaks down and reconstitutes across languages. I think thirty-five utterances is enough to see patterns if you're willing to quantify your uncertainty and resist the urge to overinterpret. Extreme data scarcity forces Bayesian humility: you work in distributions not point estimates, you quantify uncertainty, you stay honest. That discipline scales.
+
+So yes, I keep coming back to Beanish. In stolen hours, in the gaps between real projects, in that liminal space between hobby and research where you're not quite sure which you're doing. And at least now I know what ᓭᘖᔭᓄ means.
