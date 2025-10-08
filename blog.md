@@ -2,7 +2,7 @@
 layout: page
 title: Blog
 permalink: /blog/
-weight: 4
+weight: 1
 ---
 
 # Blog

@@ -1,6 +1,5 @@
 ---
 layout: page
-title: "Tiago Tresoldi"
 nav_exclude: true
 ---
 
