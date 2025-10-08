@@ -2,6 +2,7 @@
 layout: page
 title: Software
 permalink: /software/
+weight: 3
 ---
 
 # Software
