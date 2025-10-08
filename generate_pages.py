@@ -71,8 +71,9 @@ def generate_software_page(software_data):
     page_content = [
         "---",
         "layout: page",
-        "title: Software",
+        "title: SOFTWARE",
         "permalink: /software/",
+        "weight: 3",
         "---",
         "",
         "# Software",
@@ -130,8 +131,9 @@ def generate_research_page(publications):
     page_content = [
         "---",
         "layout: page",
-        "title: Research",
+        "title: RESEARCH",
         "permalink: /research/",
+        "weight: 2",
         "---",
         "",
         "# Research",
