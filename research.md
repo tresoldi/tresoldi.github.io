@@ -2,6 +2,7 @@
 layout: page
 title: RESEARCH
 permalink: /research/
+weight: 2
 ---
 
 # Research
