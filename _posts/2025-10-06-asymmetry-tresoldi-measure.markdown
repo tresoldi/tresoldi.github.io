@@ -25,9 +25,9 @@ So, the measure. I've been calling it the Tresoldi measure for lack of a better 
 
 The formula looks like this:
 
-```
-Tresoldi(X→Y) = sign(PMI) · |PMI(X,Y)|^(1 - P(Y|X))
-```
+<p style="text-align: center; font-size: 1.6rem; margin: 2rem 0; font-style: italic;">
+Tresoldi(X→Y) = sign(PMI) · |PMI(X,Y)|<sup>(1 - P(Y|X))</sup>
+</p>
 
 Let me unpack that. The measure balances two different intuitions about what makes an association meaningful. On one side, you have **Pointwise Mutual Information** (PMI), which captures surprise, the degree to which two categories co-occur more or less than you'd expect if they were independent. PMI is about information content: how much does knowing X tell you about Y that you didn't already know?
 

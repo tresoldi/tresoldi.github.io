@@ -1,8 +1,8 @@
 ---
 layout: page
-title: About
+nav_title: About
 permalink: /about/
-weight: 1
+weight: 4
 ---
 
 # About Me
@@ -17,15 +17,15 @@ I am Tiago Tresoldi, currently working as an **Insight Analyst** at Etraveli in 
 
 ## Previous Positions
 
-**Postdoctoral Researcher** | Uppsala University | 2021-2023
+**Postdoctoral Researcher** | Uppsala University, Uppsala, Sweden | 2021-2023
 
 **Postdoctoral Researcher** | Max Planck Institute for the Science of Human History, Jena | 2018-2021
 
-**Security Analyst** | Banrisul, Porto Alegre, Brazil | 2016-2018
+**Security Analyst** | Banrisul, Porto Alegre, Brazil | 2010-2013
 
-**Administrative Assistant** | UFRGS, Porto Alegre, Brazil | 2015-2016
+**Administrative Assistant** | UFRGS, Porto Alegre, Brazil | 2013-2018
 
-**Italian Language Teacher** | ACIRS, Porto Alegre, Brazil | 2014-2015
+**Italian Language Teacher** | ACIRS, Porto Alegre, Brazil | 2006-2013
 
 ## Education
 
@@ -38,7 +38,7 @@ I am Tiago Tresoldi, currently working as an **Insight Analyst** at Etraveli in 
 **Bachelor in Italian Language and Culture** | ICoN / Università di Pisa, Italy | 2008  
 *Thesis: Utilizzazione di "Hidden Markov Models" ed altri modelli per il tagging dell'italiano (Usage of Hidden Markov Models and other models for the tagging of Italian)*
 
-**Bachelor in Portuguese & English** | UFRGS, Brazil | 2007
+**Bachelor in Portuguese & English** | FURG, Brazil | 2007
 
 ## Research Interests
 
