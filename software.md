@@ -1,6 +1,6 @@
 ---
 layout: page
-title: SOFTWARE
+title: Software
 permalink: /software/
 ---
 
