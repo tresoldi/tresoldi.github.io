@@ -46,6 +46,13 @@ Part-of-speech tagging system implemented in C for efficient text processing.
 
 **Repository:** [https://github.com/tresoldi/acopost](https://github.com/tresoldi/acopost)
 
+## Data Resources
+
+### Arca Verborum
+Comprehensive lexical database for computational historical linguistics. Analysis-ready datasets from Lexibank with 149 collections covering 2.9 million language forms across 9,700+ languages. Provides denormalized CSV files optimized for rapid method development and teaching. [Project page](https://www.tresoldi.org/arcaverborum)
+
+**Repository:** [https://github.com/tresoldi/arcaverborum](https://github.com/tresoldi/arcaverborum)
+
 ## Philosophy
 
 My software development follows these principles:

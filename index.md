@@ -15,8 +15,9 @@ I love programming, primarily using Python but also exploring R, Julia, and C. M
 
 ## Current Projects
 
+- **Arca Verborum**: Large-scale lexical database for computational historical linguistics ([project page](https://www.tresoldi.org/arcaverborum))
 - **PhyloVector**: Vector-based approaches to phylogenetic analysis
-- **Uralic phylogeny**: Computational methods for Uralic language relationships  
+- **Uralic phylogeny**: Computational methods for Uralic language relationships
 - **Arawan family**: South American language family analysis
 - **Tafl games**: Computer game programming with chess-inspired algorithms
 
