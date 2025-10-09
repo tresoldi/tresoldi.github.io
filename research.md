@@ -75,7 +75,7 @@ In *The Open Handbook of Linguistic Data Management*. The MIT Press, 2022.
 ### Working Papers
 
 **A Bayesian Phylogenetic Analysis of the Arawan Language Family**  
-Tresoldi, Tiago, Delgado, Lukas, Zariquiey, Roberto  
+Tresoldi, Tiago  
 In preparation, 2025.
 
 ## Datasets
