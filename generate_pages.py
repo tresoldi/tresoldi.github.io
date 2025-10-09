@@ -95,8 +95,6 @@ def generate_software_page(software_data):
         "weight: 3",
         "---",
         "",
-        "# Software",
-        "",
         "I develop open-source tools for computational linguistics and data analysis. All projects are available on [GitHub](https://github.com/tresoldi).",
         ""
     ]
@@ -154,8 +152,6 @@ def generate_research_page(publications):
         "permalink: /research/",
         "weight: 2",
         "---",
-        "",
-        "# Research",
         "",
         "My research focuses on computational historical linguistics, with particular emphasis on native South American languages and phylogenetic methods.",
         "",

@@ -5,8 +5,6 @@ permalink: /software/
 weight: 3
 ---
 
-# Software
-
 I develop open-source tools for computational linguistics and data analysis. All projects are available on [GitHub](https://github.com/tresoldi).
 
 ## Python Libraries
