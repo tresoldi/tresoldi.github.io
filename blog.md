@@ -17,11 +17,7 @@ Thoughts on linguistics, data science, academic life, and computational methods.
 
 {% assign tags = site.tags | sort %}
 {% for tag in tags %}
-- [{{ tag[0] }}](#{{ tag[0] | slugify }}) ({{ tag[1].size }})
-{% endfor %}
-
-{% for tag in tags %}
-### {{ tag[0] }}
+### {{ tag[0] }} ({{ tag[1].size }})
 {% for post in tag[1] %}
 - **{{ post.date | date: "%B %d, %Y" }}** — [{{ post.title }}]({{ post.url }})
 {% endfor %}
