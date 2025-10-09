@@ -11,6 +11,9 @@ My research focuses on computational historical linguistics, with particular emp
 
 ## Current Projects
 
+### Arca Verborum
+Large-scale lexical database for computational historical linguistics. [Project page](https://www.tresoldi.org/arcaverborum)
+
 ### PhyloVector
 Vector-based approaches to phylogenetic analysis in historical linguistics.
 
@@ -29,6 +32,17 @@ Computer game development inspired by chess programming techniques for ancient N
 <div class="decorative-border"></div>
 
 ## Publications
+
+### Theses
+
+**O Ulisses dos muitos retornos: uma história do "clássico"** (Ph.D. Thesis)  
+Tresoldi, Tiago  
+UFRGS, Porto Alegre, Brazil, 2018.
+
+**A teorização e a prática do romance histórico em "Os noivos", de Alessandro Manzoni** (Master's Thesis)  
+Tresoldi, Tiago  
+UFRGS, Porto Alegre, Brazil, 2010.  
+[PDF](/assets/publications/tresoldi2010mestrado.pdf)
 
 ### Journal Articles
 
@@ -58,9 +72,11 @@ Tresoldi, Tiago
 Tresoldi, Tiago et al.  
 In *The Open Handbook of Linguistic Data Management*. The MIT Press, 2022.
 
-## Talks & Presentations
+### Working Papers
 
-*Talks list to be updated*
+**A Bayesian Phylogenetic Analysis of the Arawan Language Family**  
+Tresoldi, Tiago, Delgado, Lukas, Zariquiey, Roberto  
+In preparation, 2025.
 
 ## Datasets
 
