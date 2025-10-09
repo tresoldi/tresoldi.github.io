@@ -5,8 +5,6 @@ permalink: /blog/
 weight: 1
 ---
 
-# Blog
-
 Thoughts on linguistics, data science, academic life, and computational methods.
 
 ## Recent Posts

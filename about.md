@@ -5,8 +5,6 @@ permalink: /about/
 weight: 4
 ---
 
-# About Me
-
 I am Tiago Tresoldi, currently working as an **Insight Analyst** at Etraveli in Uppsala, Sweden, and serving as an **Affiliate Researcher** at the Department of Linguistics and Philology of Uppsala University.
 
 ## Current Position

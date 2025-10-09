@@ -5,8 +5,6 @@ permalink: /research/
 weight: 2
 ---
 
-# Research
-
 My research focuses on computational historical linguistics, with particular emphasis on native South American languages and phylogenetic methods.
 
 ## Current Projects
