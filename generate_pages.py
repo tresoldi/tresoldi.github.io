@@ -66,6 +66,25 @@ def format_authors(authors_str):
     return ', '.join(authors)
 
 
+def format_links(fields):
+    """Format PDF and URL links for a publication."""
+    links = []
+
+    # Add PDF link if available
+    if 'pdf' in fields:
+        pdf_file = fields['pdf']
+        links.append(f"[PDF](/assets/publications/{pdf_file})")
+
+    # Add external URL link if available
+    if 'url' in fields:
+        url = fields['url']
+        links.append(f"[Publisher]({url})")
+
+    if links:
+        return "  \n" + " | ".join(links)
+    return ""
+
+
 def generate_software_page(software_data):
     """Generate the software.md page from JSON data."""
     page_content = [
@@ -142,10 +161,13 @@ def generate_research_page(publications):
         "",
         "## Current Projects",
         "",
+        "### Arca Verborum",
+        "Large-scale lexical database for computational historical linguistics. [Project page](https://www.tresoldi.org/arcaverborum)",
+        "",
         "### PhyloVector",
         "Vector-based approaches to phylogenetic analysis in historical linguistics.",
         "",
-        "### Uralic Language Phylogeny", 
+        "### Uralic Language Phylogeny",
         "Computational methods for understanding relationships within the Uralic language family.",
         "",
         "### Arawan Family Analysis",
@@ -162,19 +184,53 @@ def generate_research_page(publications):
         "## Publications",
         ""
     ]
-    
+
     # Sort publications by year (descending)
     publications.sort(key=lambda x: int(x['fields'].get('year', 0)), reverse=True)
-    
+
     # Group by type
+    theses = [p for p in publications if p['type'] in ['phdthesis', 'mastersthesis']]
     articles = [p for p in publications if p['type'] == 'article']
     incollections = [p for p in publications if p['type'] == 'incollection']
-    
+    unpublished = [p for p in publications if p['type'] == 'unpublished']
+    presentations = [p for p in publications if p['type'] == 'misc']
+
+    # Theses section (at top)
+    if theses:
+        page_content.append("### Theses")
+        page_content.append("")
+
+        for pub in theses:
+            fields = pub['fields']
+            title = fields.get('title', 'Untitled')
+            authors = format_authors(fields.get('author', ''))
+            year = fields.get('year', '')
+            school = fields.get('school', '')
+            note = fields.get('note', '')
+
+            # Add thesis type to title if available
+            if note:
+                citation = f"**{title}** ({note})  \n"
+            else:
+                citation = f"**{title}**  \n"
+
+            citation += f"{authors}  \n"
+            if school:
+                citation += f"{school}, {year}."
+            else:
+                citation += f"{year}."
+
+            citation += format_links(fields)
+
+            page_content.append(citation)
+            page_content.append("")
+
+    # Journal articles
     if articles:
         page_content.append("### Journal Articles")
         page_content.append("")
-        
-        for i, pub in enumerate(articles, 1):
+
+        for pub in articles:
             fields = pub['fields']
             title = fields.get('title', 'Untitled')
             authors = format_authors(fields.get('author', ''))
@@ -183,9 +239,9 @@ def generate_research_page(publications):
             volume = fields.get('volume', '')
             number = fields.get('number', '')
             pages = fields.get('pages', '')
-            
+
             citation = f"**{title}**  \n{authors}  \n*{journal}*"
-            
+
             if volume:
                 citation += f", {volume}"
                 if number:
@@ -194,39 +250,79 @@ def generate_research_page(publications):
                     citation += f":{pages}"
             elif pages:
                 citation += f", {pages}"
-                
+
             citation += f", {year}."
-            
+            citation += format_links(fields)
+
             page_content.append(citation)
             page_content.append("")
-    
+
+    # Book chapters
     if incollections:
         page_content.append("### Book Chapters")
         page_content.append("")
-        
-        for i, pub in enumerate(incollections, 1):
+
+        for pub in incollections:
             fields = pub['fields']
             title = fields.get('title', 'Untitled')
             authors = format_authors(fields.get('author', ''))
             year = fields.get('year', '')
             booktitle = fields.get('booktitle', '')
             publisher = fields.get('publisher', '')
-            
+
             citation = f"**{title}**  \n{authors}  \nIn *{booktitle}*"
             if publisher:
                 citation += f". {publisher}"
             citation += f", {year}."
-            
+            citation += format_links(fields)
+
             page_content.append(citation)
             page_content.append("")
-    
+
+    # Working papers / unpublished
+    if unpublished:
+        page_content.append("### Working Papers")
+        page_content.append("")
+
+        for pub in unpublished:
+            fields = pub['fields']
+            title = fields.get('title', 'Untitled')
+            authors = format_authors(fields.get('author', ''))
+            year = fields.get('year', '')
+            note = fields.get('note', 'Unpublished manuscript')
+
+            citation = f"**{title}**  \n{authors}  \n{note}, {year}."
+            citation += format_links(fields)
+
+            page_content.append(citation)
+            page_content.append("")
+
+    # Conference presentations
+    if presentations:
+        page_content.append("### Conference Presentations")
+        page_content.append("")
+
+        for pub in presentations:
+            fields = pub['fields']
+            title = fields.get('title', 'Untitled')
+            authors = format_authors(fields.get('author', ''))
+            year = fields.get('year', '')
+            note = fields.get('note', '')
+            howpublished = fields.get('howpublished', 'Conference presentation')
+
+            citation = f"**{title}**  \n{authors}  \n"
+            if note:
+                citation += f"{note}, {year}."
+            else:
+                citation += f"{howpublished}, {year}."
+            citation += format_links(fields)
+
+            page_content.append(citation)
+            page_content.append("")
+
     # Add footer content
     page_content.extend([
-        "## Talks & Presentations",
-        "",
-        "*Talks list to be updated*",
-        "",
-        "## Datasets", 
+        "## Datasets",
         "",
         "*Research datasets to be listed*",
         "",
@@ -245,7 +341,7 @@ def generate_research_page(publications):
         "- **Collaboration**: Working across disciplines and institutions",
         "- **Community Engagement**: Involving language communities in research processes"
     ])
-    
+
     return '\n'.join(page_content)
 
 
