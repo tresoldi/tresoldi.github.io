@@ -6,7 +6,6 @@ layout: default
 <p class="subtitle">{{ page.subtitle }}</p>
 {% endif -%}
 <p class="byline">
-{% if site.show_author %}{{ page.author | default: site.author }} — {% endif %}
 {{ page.date | date: "%B %-d, %Y" }}
 </p>
 
