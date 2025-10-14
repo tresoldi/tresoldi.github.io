@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Before the Priors: On the Trees We Think With"
-date: 2025-10-10 08:00:00 +0200
+date: 2025-10-15 08:00:00 +0200
 tags: [bayesian inference, stemmatology, historical linguistics, methodology, phylogenetics]
 ---
 
