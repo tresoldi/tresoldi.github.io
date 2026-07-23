@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="col">
+  <header class="page-head">
+    <h1>Writing</h1>
+    <p class="subtitle">Essays on linguistics, computation, and the wandering between them.</p>
+  </header>
+
+  {% for year, items in years %}
+  <section class="year-group">
+    <h2 class="section year">{{ year }}</h2>
+    <ul class="entries">
+      {% for post in items %}
+      <li class="h-entry">
+        <span class="date"><time class="dt-published" datetime="{{ post.date | isodate }}">{{ post.date | date('%d %b') }}</time></span>
+        <span>
+          <a class="etitle p-name u-url" href="{{ post.url }}">{{ post.title }}</a>
+          {% if post.tags %}<span class="tags">{{ post.tags | join(' · ') }}</span>{% endif %}
+        </span>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endfor %}
+
+  {% if tags %}
+  <section class="tag-cloud">
+    <h2 class="section">Topics</h2>
+    <ul class="tags-list">
+      {% for tag, items in tags %}
+      <li><span class="tag-name">{{ tag }}</span> <span class="tag-count">{{ items | length }}</span></li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+</div>
+{% endblock %}

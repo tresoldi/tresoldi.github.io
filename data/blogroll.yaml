@@ -1,0 +1,24 @@
+# A blogroll — sites and people worth following. Personal and always partial.
+# Edit freely; these are seeds drawn from recurring references, not endorsements set in stone.
+sections:
+  - name: "Historical linguistics & data"
+    links:
+      - title: "Johann-Mattis List — Computer-Assisted Language Comparison"
+        url: "https://calc.hypotheses.org/"
+        note: "Methods, tools, and open data for historical linguistics."
+      - title: "Lexibank"
+        url: "https://lexibank.clld.org/"
+        note: "The lexical database that underpins Arca Verborum."
+      - title: "CLLD — Cross-Linguistic Linked Data"
+        url: "https://clld.org/"
+        note: "Standards and databases for the world's languages."
+  - name: "Writing on software & thinking"
+    links:
+      - title: "Tom MacWright"
+        url: "https://macwright.com/"
+        note: "Essays on software, maps, and craft."
+  - name: "For the joy of it"
+    links:
+      - title: "xkcd"
+        url: "https://xkcd.com/"
+        note: "Including 'Time' (#1190), which gave me a language to decipher."

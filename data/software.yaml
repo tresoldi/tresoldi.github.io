@@ -1,0 +1,44 @@
+# Single source of truth for the /software/ page. Edit here, rebuild.
+categories:
+  - name: "Python Libraries"
+    items:
+      - name: "nhandu"
+        description: "Literate programming for Python: write executable documents in plain .py files, with captured output, plots, and rich object rendering. A git-friendly alternative to Jupyter notebooks."
+        repository_url: "https://github.com/tresoldi/nhandu"
+        pypi_url: "https://pypi.org/project/nhandu/"
+        language: "Python"
+      - name: "dafsa"
+        description: "Deterministic Acyclic Finite State Automata for efficient string matching and morphological analysis."
+        repository_url: "https://github.com/tresoldi/dafsa"
+        pypi_url: "https://pypi.org/project/dafsa/"
+        language: "Python"
+      - name: "ngesh"
+        description: "Generation of synthetic phylogenetic data for testing and validating computational methods."
+        repository_url: "https://github.com/tresoldi/ngesh"
+        pypi_url: "https://pypi.org/project/ngesh/"
+        language: "Python"
+      - name: "freqprob"
+        description: "Frequency probability estimation for linguistic datasets — smoothing and scoring methods."
+        repository_url: "https://github.com/tresoldi/freqprob"
+        pypi_url: null
+        language: "Python"
+      - name: "asymcat"
+        description: "Statistical analysis of asymmetric categorical associations, with applications in typology and the modelling of sound change."
+        repository_url: "https://github.com/tresoldi/asymcat"
+        pypi_url: null
+        language: "Python"
+  - name: "C Tools"
+    items:
+      - name: "acopost"
+        description: "A part-of-speech tagging system in C for efficient text processing."
+        repository_url: "https://github.com/tresoldi/acopost"
+        pypi_url: null
+        language: "C"
+  - name: "Data Resources"
+    items:
+      - name: "Arca Verborum"
+        description: "Analysis-ready lexical data for computational historical linguistics: 149 Lexibank collections, 2.9 million forms across 9,700+ languages, denormalised into single-file CSVs for rapid method development and teaching."
+        repository_url: "https://github.com/tresoldi/arcaverborum"
+        pypi_url: null
+        project_url: "https://www.tresoldi.org/arcaverborum"
+        language: "Data"

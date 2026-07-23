@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="col">
+  <header class="page-head">
+    <h1>Notes</h1>
+    <p class="subtitle">Short-form thoughts, links, and marginalia — the underbrush of the <em>silva</em>.</p>
+  </header>
+
+  {% if notes %}
+  <ul class="note-stream">
+    {% for note in notes %}
+    <li class="note h-entry" id="{{ note.slug }}">
+      <div class="note-body e-content">{{ note.body | safe }}</div>
+      <p class="note-meta">
+        <a class="u-url" href="{{ note.url }}"><time class="dt-published" datetime="{{ note.date | isodate }}">{{ note.date | date('%-d %B %Y') }}</time></a>
+      </p>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="empty">No notes yet. Watch this space.</p>
+  {% endif %}
+</div>
+{% endblock %}

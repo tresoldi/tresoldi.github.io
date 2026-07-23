@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="titlepage h-card">
+  <p class="kicker">the commonplace book of <b class="p-name">{{ site.author }}</b></p>
+  <h1 class="hero-name p-org">{{ site.title }}</h1>
+  <p class="hero-sub p-note">{{ site.tagline }}</p>
+  <hr class="ornrule">
+  <p class="standfirst">
+    <span class="p-job-title">{{ site.role }}</span> ·
+    <span class="p-locality">{{ site.locality }}</span>, <span class="p-country-name">{{ site.country }}</span>
+  </p>
+  <a class="u-url u-uid" href="{{ site.url }}/" hidden>{{ site.url }}</a>
+</section>
+
+<div class="col lead-block">
+  {{ content | safe }}
+</div>
+
+<section class="col">
+  <h2 class="section">Latest writing</h2>
+  <ul class="entries">
+    {% for post in posts %}
+    <li class="h-entry">
+      <span class="date"><time class="dt-published" datetime="{{ post.date | isodate }}">{{ post.date | date('%d %b %Y') }}</time></span>
+      <span>
+        <a class="etitle p-name u-url" href="{{ post.url }}">{{ post.title }}</a>
+        {% if post.tags %}<span class="tags">{{ post.tags | join(' · ') }}</span>{% endif %}
+      </span>
+    </li>
+    {% endfor %}
+  </ul>
+  <p class="more"><a href="/writing/">All writing →</a></p>
+</section>
+
+<section class="col duo home-duo">
+  <div class="now">
+    <h2 class="section">Now</h2>
+    {% if page.now_stamp %}<p class="stamp">{{ page.now_stamp }}</p>{% endif %}
+    <p>{{ page.now }}</p>
+    <p class="more"><a href="/now/">More on what I'm doing now →</a></p>
+  </div>
+  <div class="projects">
+    <h2 class="section">Projects</h2>
+    {% for pr in page.projects %}
+    <div class="card">
+      <h3><a href="{{ pr.url }}">{{ pr.title }}</a></h3>
+      <p>{{ pr.note }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

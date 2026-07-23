@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+  <link rel="canonical" href="{{ canonical }}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:url" content="{{ canonical }}">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }} — Atom feed" href="/feed.xml">
+  <link rel="alternate" type="application/feed+json" title="{{ site.title }} — JSON feed" href="/feed.json">
+  <link rel="webmention" href="https://webmention.io/{{ site.webmention_domain }}/webmention">
+  <link rel="pingback" href="https://webmention.io/{{ site.webmention_domain }}/xmlrpc">
+  <link rel="me" href="{{ site.url }}/">
+  {% block head %}{% endblock %}
+
+  <script>
+    // Set the theme before paint to avoid a flash; the toggle stamps data-theme.
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t) document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  {% include "partials/masthead.html" %}
+  <main id="main" class="wrap {{ main_class | default('') }}">
+    {% block content %}{% endblock %}
+  </main>
+  {% include "partials/footer.html" %}
+
+  <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch light or dark theme">◑</button>
+  <script>
+    (function () {
+      var btn = document.getElementById("theme-toggle");
+      btn.addEventListener("click", function () {
+        var root = document.documentElement;
+        var cur = root.getAttribute("data-theme");
+        if (!cur) cur = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        var next = cur === "dark" ? "light" : "dark";
+        root.setAttribute("data-theme", next);
+        try { localStorage.setItem("theme", next); } catch (e) {}
+      });
+    })();
+  </script>
+</body>
+</html>

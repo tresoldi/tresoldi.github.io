@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<article class="col note-single h-entry">
+  <div class="note-body e-content">{{ note.body | safe }}</div>
+  <footer class="note-meta">
+    <a class="u-url" href="{{ note.url }}"><time class="dt-published" datetime="{{ note.date | isodate }}">{{ note.date | date('%-d %B %Y, %H:%M') }}</time></a>
+    <a class="p-author h-card" rel="author" href="{{ site.url }}/" hidden>{{ site.author }}</a>
+    <span class="sep">·</span> <a href="/notes/">All notes</a>
+  </footer>
+</article>
+{% endblock %}

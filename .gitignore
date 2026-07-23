@@ -1,3 +1,18 @@
-AGENTS.md
+# Build output
+_site/
+.nojekyll
+
+# Screenshots / scratch
+shot-*.png
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Legacy Ruby/Jekyll (retired)
 vendor/
+.bundle/
 Gemfile.lock
+AGENTS.md

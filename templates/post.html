@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block head %}
+  <meta property="article:published_time" content="{{ post.date | isodate }}">
+  {% for t in post.tags %}<meta property="article:tag" content="{{ t }}">
+  {% endfor %}
+{% endblock %}
+{% block content %}
+<article class="essay h-entry">
+  <header class="essay-head">
+    <h1 class="p-name">{{ post.title }}</h1>
+    <p class="byline">
+      <time class="dt-published" datetime="{{ post.date | isodate }}">{{ post.date | date('%-d %B %Y') }}</time>
+      {% if post.tags %}<span class="dot">·</span> <span class="p-category-list">{{ post.tags | join(' · ') }}</span>{% endif %}
+    </p>
+    <a class="p-author h-card" rel="author" href="{{ site.url }}/" hidden>{{ site.author }}</a>
+    <a class="u-url" href="{{ post.url }}" hidden>{{ site.url }}{{ post.url }}</a>
+  </header>
+
+  <div class="body e-content dropcap">
+    {{ post.body | safe }}
+  </div>
+
+  <footer class="essay-foot">
+    {% if newer or older %}
+    <nav class="prevnext" aria-label="More writing">
+      {% if older %}<a class="prev" href="{{ older.url }}"><span class="lbl">Older</span>{{ older.title }}</a>{% endif %}
+      {% if newer %}<a class="next" href="{{ newer.url }}"><span class="lbl">Newer</span>{{ newer.title }}</a>{% endif %}
+    </nav>
+    {% endif %}
+    <p class="backlink"><a href="/writing/">← All writing</a></p>
+  </footer>
+</article>
+{% endblock %}

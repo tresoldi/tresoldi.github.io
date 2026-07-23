@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ site.title }}</title>
+  <subtitle>{{ site.description }}</subtitle>
+  <link href="{{ site.url }}/feed.xml" rel="self"/>
+  <link href="{{ site.url }}/"/>
+  <updated>{{ build_time | isodate }}</updated>
+  <id>{{ site.url }}/</id>
+  <author><name>{{ site.author }}</name><email>{{ site.email }}</email></author>
+  {% for post in posts %}
+  <entry>
+    <title>{{ post.title }}</title>
+    <link href="{{ site.url }}{{ post.url }}"/>
+    <id>{{ site.url }}{{ post.url }}</id>
+    <published>{{ post.date | isodate }}</published>
+    <updated>{{ post.date | isodate }}</updated>
+    {% for t in post.tags %}<category term="{{ t }}"/>
+    {% endfor %}
+    <summary>{{ post.excerpt }}</summary>
+    <content type="html">{{ post.body }}</content>
+  </entry>
+  {% endfor %}
+</feed>

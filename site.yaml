@@ -1,0 +1,42 @@
+# Silvæ — site configuration
+# Single source of truth for global values. Edit here, rebuild with `python build.py`.
+
+title: "Silvæ"
+tagline: "Letters, programming, evolution, &c."
+author: "Tiago Tresoldi"
+role: "Computational historical linguistics"
+locality: "Uppsala"
+country: "Sweden"
+email: "tiago@tresoldi.org"
+url: "https://www.tresoldi.org"
+lang: "en"
+description: "The commonplace book of Tiago Tresoldi — computational historical linguistics, open-source software, and essays on letters, programming, and evolution."
+
+# webmention.io endpoint (register the domain there to receive mentions)
+webmention_domain: "www.tresoldi.org"
+
+# Primary navigation
+nav:
+  - { title: "Writing",  url: "/writing/" }
+  - { title: "Research", url: "/research/" }
+  - { title: "Software", url: "/software/" }
+  - { title: "Notes",    url: "/notes/" }
+  - { title: "About",    url: "/about/" }
+
+# Secondary (footer) links — the small-web furniture
+meta_nav:
+  - { title: "Now",       url: "/now/" }
+  - { title: "Uses",      url: "/uses/" }
+  - { title: "Blogroll",  url: "/blogroll/" }
+  - { title: "Colophon",  url: "/colophon/" }
+  - { title: "Feed",      url: "/feed.xml" }
+
+# rel="me" identity links — this site as your verified hub
+me:
+  - { title: "GitHub",  url: "https://github.com/tresoldi" }
+  - { title: "Twitter", url: "https://twitter.com/tresoldi" }
+  - { title: "Email",   url: "mailto:tiago@tresoldi.org" }
+
+# How many posts on the home page and in the feeds
+home_posts: 5
+feed_posts: 20

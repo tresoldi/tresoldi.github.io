@@ -1,0 +1,10 @@
+<header class="masthead wrap">
+  <a class="wordmark" href="/">{{ site.title }}</a>
+  <nav aria-label="Primary">
+    <ul>
+      {% for item in site.nav %}
+      <li><a href="{{ item.url }}"{% if nav_active == item.url %} class="active" aria-current="page"{% endif %}>{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>

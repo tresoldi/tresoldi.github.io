@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="col page">
+  <header class="page-head">
+    <h1>{{ page.title | default('Software') }}</h1>
+    {% if page.subtitle %}<p class="subtitle">{{ page.subtitle }}</p>{% endif %}
+  </header>
+
+  <div class="body intro">{{ content | safe }}</div>
+
+  {% for category in software.categories %}
+  {% if category['items'] %}
+  <section class="sw-category">
+    <h2 class="section">{{ category.name }}</h2>
+    <ul class="sw-list">
+      {% for tool in category['items'] %}
+      <li class="sw-item">
+        <h3 class="sw-name">{{ tool.name }}{% if tool.language %} <span class="sw-lang">{{ tool.language }}</span>{% endif %}</h3>
+        <p class="sw-desc">{{ tool.description }}</p>
+        <p class="sw-links">
+          {% if tool.repository_url %}<a href="{{ tool.repository_url }}">Repository</a>{% endif %}
+          {% if tool.pypi_url %}<span class="sep">·</span> <a href="{{ tool.pypi_url }}">PyPI</a>{% endif %}
+          {% if tool.project_url %}<span class="sep">·</span> <a href="{{ tool.project_url }}">Project page</a>{% endif %}
+        </p>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+  {% endfor %}
+</div>
+{% endblock %}

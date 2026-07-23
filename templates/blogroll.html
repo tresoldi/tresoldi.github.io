@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="col page">
+  <header class="page-head">
+    <h1>{{ page.title | default('Blogroll') }}</h1>
+    {% if page.subtitle %}<p class="subtitle">{{ page.subtitle }}</p>{% endif %}
+  </header>
+
+  <div class="body intro">{{ content | safe }}</div>
+
+  {% for section in blogroll.sections %}
+  <section class="roll-section">
+    <h2 class="section">{{ section.name }}</h2>
+    <ul class="roll-list">
+      {% for link in section.links %}
+      <li class="h-cite">
+        <a class="p-name u-url" href="{{ link.url }}">{{ link.title }}</a>
+        {% if link.note %}<span class="roll-note">— {{ link.note }}</span>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,18 @@
+<footer class="site-footer wrap">
+  <nav class="meta-nav" aria-label="Secondary">
+    <ul>
+      {% for item in site.meta_nav %}
+      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+  <div class="colophon-line">
+    <span class="rels">
+      {% for m in site.me %}<a rel="me" href="{{ m.url }}">{{ m.title }}</a>{% endfor %}
+    </span>
+    <span class="imprint">
+      Set in ET&nbsp;Book. Built by hand with Python &amp; Pandoc.
+      {{ site.locality }}, <span class="roman-num">mmxxvi</span>.
+    </span>
+  </div>
+</footer>
