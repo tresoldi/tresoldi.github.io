@@ -6,15 +6,15 @@ description: "Research in computational historical linguistics: phylogenetics of
 bibliography_list: "publications.bib"
 ---
 
-I work on **computational historical linguistics** — building methods to reconstruct the
-deep history of languages and text traditions, and applying them to families that are
-often under-served by quantitative work, especially in native South America.
+I work in **computational historical linguistics**: I build methods to reconstruct the deep
+past of languages and the texts that carry them, and I point those methods at families that
+most quantitative work has passed over — above all in native South America.
 
 ## Phylogenetics
 
-The through-line of my research is **phylogenetic inference**: treating languages, and the
-manuscripts that transmit texts, as evolving systems whose histories can be recovered from
-the traces they leave behind. The methods travel across three fronts.
+If there is a single thread through my work, it is **phylogenetic inference** — reading
+languages, and the manuscripts that transmit texts, as things that evolve, and trying to
+recover where they came from out of the traces they leave. It turns up on three fronts.
 
 ### Language families
 
@@ -46,9 +46,9 @@ the full toolkit.
 
 Beyond phylogenetics, I work on the **documentation and computational description** of
 Indigenous languages of South America — assembling analysis-ready resources and supporting
-community-facing platforms for languages such as Makuráp, Enawenê-Nawê, and Bororo. The aim
-is infrastructure that serves both quantitative comparison and the communities whose
-languages it represents.
+community-facing platforms for languages such as Makuráp, Enawenê-Nawê, and Bororo. I would
+like the infrastructure to be useful in both directions: for comparison and analysis, and
+for the communities whose languages it holds.
 
 ## Lexical databases
 
@@ -62,11 +62,12 @@ contribute to:
 - Contributions to **Lexibank**, **CLICS**, and the **CLDF** ecosystem for cross-linguistic
   data.
 
-## Philosophy
+## How I try to work
 
-I care about **open science** (data and methods in the open), **reproducibility** (results
-others can verify), **collaboration** across disciplines, and **community engagement** with
-the language communities this work touches.
+As much as I can, I work in the open — data, code, and methods where anyone can check them.
+A result nobody else can reproduce is really just an assertion with good production values.
+And because these are living languages spoken by living people, I try to keep that in view,
+rather than treat them as rows in a table.
 
 ## Elsewhere
 

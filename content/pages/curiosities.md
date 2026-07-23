@@ -5,8 +5,8 @@ subtitle: "Diversions, side-quests, and things made for the joy of it"
 description: "Curiosities and side projects by Tiago Tresoldi: Beanish decipherment, runestave visualization, a COBOL Bloom filter, Tafl games, and more."
 ---
 
-Not everything needs a grant. These are the side-quests — made out of curiosity, taught me
-something, and are too much fun to leave off the record.
+Not everything needs a grant. These are the side-quests: I made them out of curiosity, they
+each taught me something, and they are too much fun to leave off the record.
 
 ## Deciphering Beanish
 
