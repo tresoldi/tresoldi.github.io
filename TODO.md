@@ -35,7 +35,6 @@ These pages were seeded from my profile and are placeholders — rewrite them.
       guesses from repo names (e.g. maniphono, alteruphono, multitiers, panphylo); tweak to
       taste.
 - [ ] **Add a CV PDF** — drop `cv.pdf` into `static/assets/` and link it from `/cv/`.
-- [ ] **Confirm the docent year** and any missing positions on `/cv/` and About.
 - [ ] Consider **embedding the runestaves visualisation** on `/curiosities/` rather than
       just linking it.
 

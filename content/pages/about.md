@@ -7,8 +7,7 @@ description: "About Tiago Tresoldi: computational historical linguist, software 
 
 I am an **Insight Analyst** at [Etraveli](https://www.etraveli.com) in Uppsala, Sweden,
 and an **Affiliate Researcher** at the [Department of Linguistics and
-Philology](https://www.lingfil.uu.se/english/) of Uppsala University, where I also hold the
-title of **Docent** (the Swedish habilitation) in Computational Linguistics.
+Philology](https://www.lingfil.uu.se/english/) of Uppsala University.
 
 My research is in **computational historical linguistics** — developing methods for the
 evolution of languages and text traditions, with a particular fondness for phylogenetic

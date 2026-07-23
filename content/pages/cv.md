@@ -15,7 +15,6 @@ is on the [research](/research/) page.*
 - **Insight Analyst**, Etraveli Group, Uppsala · 2024–present
 - **Affiliate Researcher**, Department of Linguistics and Philology, Uppsala University ·
   2023–present
-- **Docent** (habilitation) in Computational Linguistics, Uppsala University
 
 ## Positions held
 
