@@ -5,10 +5,16 @@ subtitle: "How this site is made"
 description: "Colophon: how the Silvæ site is built — Python, Pandoc, Jinja2, ET Book, and GitHub Pages."
 ---
 
-This site is called **Silvæ** — after the Latin *silva*, the "wood" or gathering of
-occasional pieces that Statius and the Renaissance used for a miscellany of writing. It is
-a commonplace book: essays, research, software, and shorter notes, kept in one place I
-control.
+This site is titled **Iacobi Silvæ** — "the Silvæ of Iacobus," after Statius's *Silvae*,
+the "woods" or gathering of occasional pieces that antiquity and the Renaissance used for
+a miscellany of writing. It is a commonplace book: essays, research, software, and shorter
+notes, kept in one place I control.
+
+*Sub rosa*, the author signs himself **Iacobus Goedelius Triobolos**. *Iacobus* is the
+Latin of *Tiago*; *Goedelius* Latinises my mother's name, **Gödel**; and *Triobolos*
+(Greek Τριώβολος, "worth three obols") renders my father's **Tresoldi** — *tre soldi*,
+three coins — into the older currency. A small humanist conceit, offered to whoever reads
+this far.
 
 ## Built by hand
 

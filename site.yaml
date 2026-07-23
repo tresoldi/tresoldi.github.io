@@ -1,9 +1,11 @@
 # Silvæ — site configuration
 # Single source of truth for global values. Edit here, rebuild with `python build.py`.
 
-title: "Silvæ"
+title: "Iacobi Silvæ"
 tagline: "Letters, programming, evolution, &c."
 author: "Tiago Tresoldi"
+# Sub rosa — the classical persona, kept semi-hidden (microformat, colophon, source comment)
+classical_name: "Iacobus Goedelius Triobolos"
 role: "Computational historical linguistics"
 locality: "Uppsala"
 country: "Sweden"
