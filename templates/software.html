@@ -19,8 +19,8 @@
         <p class="sw-desc">{{ tool.description }}</p>
         <p class="sw-links">
           {% if tool.repository_url %}<a href="{{ tool.repository_url }}">Repository</a>{% endif %}
-          {% if tool.pypi_url %}<span class="sep">·</span> <a href="{{ tool.pypi_url }}">PyPI</a>{% endif %}
-          {% if tool.project_url %}<span class="sep">·</span> <a href="{{ tool.project_url }}">Project page</a>{% endif %}
+          {% if tool.pypi_url %} <span class="sep">·</span> <a href="{{ tool.pypi_url }}">PyPI</a>{% endif %}
+          {% if tool.project_url %} <span class="sep">·</span> <a href="{{ tool.project_url }}">Project page</a>{% endif %}
         </p>
       </li>
       {% endfor %}
