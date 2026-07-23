@@ -27,15 +27,18 @@ nav:
 
 # Secondary (footer) links — the small-web furniture
 meta_nav:
-  - { title: "Now",       url: "/now/" }
-  - { title: "Uses",      url: "/uses/" }
-  - { title: "Blogroll",  url: "/blogroll/" }
-  - { title: "Colophon",  url: "/colophon/" }
-  - { title: "Feed",      url: "/feed.xml" }
+  - { title: "Now",         url: "/now/" }
+  - { title: "Uses",        url: "/uses/" }
+  - { title: "CV",          url: "/cv/" }
+  - { title: "Curiosities", url: "/curiosities/" }
+  - { title: "Blogroll",    url: "/blogroll/" }
+  - { title: "Colophon",    url: "/colophon/" }
+  - { title: "Feed",        url: "/feed.xml" }
 
 # rel="me" identity links — this site as your verified hub
 me:
   - { title: "GitHub",  url: "https://github.com/tresoldi" }
+  - { title: "ORCID",   url: "https://orcid.org/0000-0002-2863-1467" }
   - { title: "Twitter", url: "https://twitter.com/tresoldi" }
   - { title: "Email",   url: "mailto:tiago@tresoldi.org" }
 

@@ -26,6 +26,19 @@ These pages were seeded from my profile and are placeholders — rewrite them.
       Since the build is a plain `python build.py`, any of these can run it; keep the
       `CNAME`/custom domain and update DNS if the host changes.
 
+## Showcase follow-ups (verify / refine)
+- [ ] **Sync the full publication list from ORCID** (0000-0002-2863-1467) — I seeded the
+      major recent papers (Tupí-Guaraní PLOS ONE, GLED, CLDF feature-vectors); confirm
+      author orders and add the rest. A one-time BibTeX export from ORCID/Zotero into
+      `data/publications.bib` keeps it complete and correct.
+- [ ] **Review the software descriptions** in `data/software.yaml` — a few are curated
+      guesses from repo names (e.g. maniphono, alteruphono, multitiers, panphylo); tweak to
+      taste.
+- [ ] **Add a CV PDF** — drop `cv.pdf` into `static/assets/` and link it from `/cv/`.
+- [ ] **Confirm the docent year** and any missing positions on `/cv/` and About.
+- [ ] Consider **embedding the runestaves visualisation** on `/curiosities/` rather than
+      just linking it.
+
 ## Nice-to-have later
 - [ ] A CV: drop a `cv.pdf` into `static/assets/` and link it from About (the old broken
       link was removed).

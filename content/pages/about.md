@@ -7,7 +7,8 @@ description: "About Tiago Tresoldi: computational historical linguist, software 
 
 I am an **Insight Analyst** at [Etraveli](https://www.etraveli.com) in Uppsala, Sweden,
 and an **Affiliate Researcher** at the [Department of Linguistics and
-Philology](https://www.lingfil.uu.se/english/) of Uppsala University.
+Philology](https://www.lingfil.uu.se/english/) of Uppsala University, where I also hold the
+title of **Docent** (the Swedish habilitation) in Computational Linguistics.
 
 My research is in **computational historical linguistics** — developing methods for the
 evolution of languages and text traditions, with a particular fondness for phylogenetic
@@ -47,10 +48,18 @@ Dante's Ulysses, sailing past the pillars for the sake of one more intellectual 
 Phylogenetic methods in historical linguistics; sound correspondences and the inference
 of sound change; native South American languages (Tupían, Arawan); large language models
 in production; reproducible research and data stewardship; digital humanities; and — for
-sport — Tafl games with chess-inspired algorithms.
+sport — Tafl games, undeciphered scripts, and the odd detour into Egyptology. A few of
+those [curiosities](/curiosities/) have pages of their own.
+
+A fuller account is on the [CV](/cv/) and the [research](/research/) page.
 
 ## Elsewhere
 
 - **Email** — [tiago@tresoldi.org](mailto:tiago@tresoldi.org)
 - **GitHub** — [tresoldi](https://github.com/tresoldi)
+- **ORCID** — [0000-0002-2863-1467](https://orcid.org/0000-0002-2863-1467)
+- **Google Scholar** — [profile](https://scholar.google.com/citations?user=YyMSgZwAAAAJ)
+- **ResearchGate** — [Tiago-Tresoldi](https://www.researchgate.net/profile/Tiago-Tresoldi)
+- **Academia.edu** — [TiagoTresoldi](https://uppsala.academia.edu/TiagoTresoldi)
+- **LinkedIn** — [in/tresoldi](https://www.linkedin.com/in/tresoldi/)
 - **Twitter** — [@tresoldi](https://twitter.com/tresoldi)
