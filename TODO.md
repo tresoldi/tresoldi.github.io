@@ -18,6 +18,14 @@ These pages were seeded from my profile and are placeholders — rewrite them.
       people I actually read.
 - [ ] **`content/notes/`** — replace the single starter note with real notes as they come.
 
+## Hosting
+- [ ] **Move to a host that allows a private source repo** while keeping the site public.
+      GitHub Free only serves Pages from public repos; options that deploy a public site
+      from a private repo include **GitHub Pro** (private repo + Pages) or a static host
+      such as **Cloudflare Pages / Netlify / Vercel** (free tiers deploy from private repos).
+      Since the build is a plain `python build.py`, any of these can run it; keep the
+      `CNAME`/custom domain and update DNS if the host changes.
+
 ## Nice-to-have later
 - [ ] A CV: drop a `cv.pdf` into `static/assets/` and link it from About (the old broken
       link was removed).
