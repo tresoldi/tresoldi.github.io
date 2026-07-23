@@ -4,6 +4,7 @@ _site/
 
 # Screenshots / scratch
 shot-*.png
+final-*.png
 
 # Python
 __pycache__/
