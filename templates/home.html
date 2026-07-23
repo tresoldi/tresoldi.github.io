@@ -1,21 +1,28 @@
 {% extends "base.html" %}
 {% block content %}
-<section class="titlepage h-card">
-  <p class="kicker">the commonplace book of <b class="p-name">{{ site.author }}</b></p>
-  <h1 class="hero-name p-org">{{ site.title }}</h1>
-  <p class="hero-sub p-note">{{ site.tagline }}</p>
+<section class="titlepage">
+  <p class="kicker">the commonplace book of <b>{{ site.author }}</b></p>
+  <h1 class="hero-name">{{ site.title }}</h1>
+  <p class="hero-sub">{{ site.tagline }}</p>
   <hr class="ornrule">
   <p class="standfirst">
-    <span class="p-job-title">{{ site.role }}</span> ·
-    <span class="p-locality">{{ site.locality }}</span>, <span class="p-country-name">{{ site.country }}</span>
+    {{ site.role }} · {{ site.locality }}, {{ site.country }}
   </p>
+</section>
+
+<section class="intro-card h-card">
+  <img class="u-photo portrait" src="/assets/img/tiago.jpg" width="400" height="400"
+       alt="Tiago Tresoldi" loading="eager">
+  <div class="intro-text lead-block p-note">
+    {{ content | safe }}
+  </div>
+  <span class="p-name" hidden>{{ site.author }}</span>
+  <span class="p-job-title" hidden>{{ site.role }}</span>
+  <span class="p-locality" hidden>{{ site.locality }}</span>
+  <span class="p-country-name" hidden>{{ site.country }}</span>
   <a class="u-url u-uid" href="{{ site.url }}/" hidden>{{ site.url }}</a>
   <data class="p-nickname" value="{{ site.classical_name }}"></data>
 </section>
-
-<div class="col lead-block">
-  {{ content | safe }}
-</div>
 
 <section class="col">
   <h2 class="section">Latest writing</h2>

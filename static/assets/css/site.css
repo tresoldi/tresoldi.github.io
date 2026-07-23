@@ -106,6 +106,28 @@ a{color:inherit;}
 .ornrule{width:3.2rem;height:1px;background:var(--rule);border:0;margin:1.4rem auto;}
 .standfirst{font-family:var(--sans);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);}
 
+/* ---- home: portrait + intro strip --------------------------------------- */
+.intro-card{
+  max-width:44rem;margin:1.4rem auto 0;
+  display:grid;grid-template-columns:11rem 1fr;gap:1.9rem;align-items:start;
+}
+.portrait{
+  width:11rem;height:11rem;object-fit:cover;border-radius:4px;
+  border:1px solid var(--rule);
+  box-shadow:0 2px 12px rgba(38,32,26,.12);
+}
+@media (prefers-color-scheme:dark){
+  .portrait{box-shadow:0 2px 14px rgba(0,0,0,.45);}
+}
+:root[data-theme="dark"] .portrait{box-shadow:0 2px 14px rgba(0,0,0,.45);}
+:root[data-theme="light"] .portrait{box-shadow:0 2px 12px rgba(38,32,26,.12);}
+.intro-text p:first-child{margin-top:0;}
+@media (max-width:36rem){
+  .intro-card{grid-template-columns:1fr;justify-items:center;gap:1.1rem;}
+  .portrait{width:9rem;height:9rem;}
+  .intro-text{text-align:left;}
+}
+
 /* ---- generic prose ------------------------------------------------------- */
 .lead-block,.page .body,.intro{font-size:1.05rem;}
 .lead-block p:first-child{font-size:1.16rem;}
