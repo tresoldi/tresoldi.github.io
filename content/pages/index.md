@@ -17,9 +17,9 @@ projects:
     note: "Measures for asymmetric categorical associations in language change."
 ---
 
-I build methods for reading the deep history of languages — sound changes, lexical
-evolution, the phylogenies of text traditions — mostly in Python, lately with an eye on
-how machines can help us *think* rather than think for us.
+I am [Tiago Tresoldi]{.p-name}. I build methods for reading the deep history of
+languages — sound changes, lexical evolution, the phylogenies of text traditions — mostly
+in Python, lately with an eye on how machines can help us *think* rather than think for us.
 
 By day I turn messy data into answers as an insight analyst; by inclination I have
 wandered from literature to linguistics to data science, still unsure whether I am
