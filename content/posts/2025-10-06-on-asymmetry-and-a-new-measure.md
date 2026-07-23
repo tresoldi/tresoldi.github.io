@@ -2,8 +2,8 @@
 title: "On Asymmetry and a New Measure"
 date: 2025-10-06 08:00:00 +0200
 tags: [asymmetry, computational linguistics, methodology, asymcat]
+draft: true
 ---
-
 As part of my [`asymcat`](https://github.com/tresoldi/asymcat) library (which is required by my `malign` library and which supports a lot of my work and ideas on computational modelling of phonology and sound change) I have been working on a new measure for asymmetric categorical associations. But before I get to the technical details, let me indulge in what has become something of a Borgesian obsession: the problem of asymmetry in scientific thinking.
 
 You know the type. Borges gave us the cartographers who drew maps at 1:1 scale until they covered the entire empire. I seem to have developed a similar condition, except my encyclopedic compulsion is to see asymmetry everywhere, to insist on its importance in every project, to refuse the comforting simplifications of symmetric thinking. It's a bit exhausting, honestly, and it has made publish less (not good) and get fewer requests to be a reviewer (perhaps not that bad). 

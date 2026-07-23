@@ -2,8 +2,8 @@
 title: "On Manifolds, Code, and the Infrastructure Between"
 date: 2025-10-13 08:00:00 +0200
 tags: [row2vec, embeddings, llm agents, infrastructure, craftsmanship, computational linguistics]
+draft: true
 ---
-
 I've just released [row2vec](https://github.com/evotext/row2vec), a library for generating low-dimensional embeddings from tabular data -- it takes rows of mixed content in a dataset, and transforms each one into a series of numbers which are more easily comparable one with the other. Neural autoencoders, classical methods (PCA, t-SNE, UMAP), neural architecture search, contrastive learning for manuscripts, there is a lot in such a small library. It was originally built for Michael's Cultural Evolution of Texts project, specifically for modeling runestave evolution, but designed as infrastructure for problems I haven't encountered yet.
 
 The library is part of what might look like a sudden burst of productivity: `asymcat`, `freqprob`, `arcaverborum`, now `row2vec` (and more stuff on the line to be released). It does not come from productivity, but from acceptance. These projects have been hanging around, half-finished, over-thought, waiting for me to stop insisting they be perfectly polished before release. And here's the part that might surprise some people: I built a lot of this with the help of LLM coding agents. I'm probably more skeptical about AI-assisted coding than most people actually using it, the way I'm skeptical about Bayesian phylogenetics, but I have been using it anyway. Carefully. Slowly. 

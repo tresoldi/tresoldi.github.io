@@ -2,8 +2,8 @@
 title: "Before the Priors: On the Trees We Think With"
 date: 2025-10-15 08:00:00 +0200
 tags: [bayesian inference, stemmatology, historical linguistics, methodology, phylogenetics]
+draft: true
 ---
-
 I am old enough to have worked on a research project that used expert systems. Not machine learning, not neural nets, but *if-then-else* logic multiplied by the hundreds. We were building a linguistic engine: thousands of lexical entries, dozens of statistical checks, and then layer after layer of hand-crafted rules. It was closer to watchmaking than to factory production. The system worked. Slow, but transparent. You could point to any given behavior and say: this happens because of this rule. You could test a single condition, rewrite it, watch the effects ripple through.
 
 Looking back, we were at the edge of what would become standard machine learning, with decision trees written by humans instead of gradient descent. We had all the ingredients: data, statistics, feedback loops. The professor leading it preferred transparency over black-box elegance (and we are talking about mid-2000s, where this was hardly a topic in that field). The goal was to understand, not just to predict. He was right. The work never got published and is surely lost -- he passed away almost a decade ago -- but I learned more from those hand-written rule cascades, which also involved an embrionary machine-translation system, than from any parameter-optimized model I've built since.
